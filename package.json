@@ -1,0 +1,23 @@
+{
+  "name": "soflex-be-iii",
+  "version": "1.0.0",
+  "description": "soflex server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cores": "^0.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.4",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "sqlite3": "^5.0.2"
+  }
+}
