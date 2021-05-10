@@ -4,6 +4,8 @@ const server = require('http').createServer(app);
 const cors = require('cors')
 const Port = process.env.PORT || 5000;
 
+const Users = require('./Routers/user-router')
+
 server.listen(Port, () => {
     console.log(`Listening at ${Port}`);
   });
@@ -20,3 +22,5 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send({ response: "I am alive Test" }).status(200);
 });
+
+app.use('/api/users', Users);
